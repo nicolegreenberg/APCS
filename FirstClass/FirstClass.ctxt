@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=FirstClass()
+comment1.params=x\ y
+comment1.target=FirstClass(int,\ int)
+comment2.params=
+comment2.target=int\ addEmUp()
+comment3.params=
+comment3.target=int\ difference()
+numComments=4
