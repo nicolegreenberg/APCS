@@ -16,22 +16,22 @@ public class PictureTester
     beach.zeroBlue();
     beach.explore();
   }
-  public static void testKeepOnyBlue(){
-      Picture beach = new Picture("beach.jpg");
+  public static void testKeepOnlyBlue(){
+      Picture beach = new Picture("best-kitten-names-1.jpg");
       beach.explore();
-      beach.keepOnyBlue();
+      beach.keepOnlyBlue();
       beach.explore();
     }
     public static void testNegate(){
-        Picture beach = new Picture("beach.jpg");
+        Picture beach = new Picture("best-kitten-names-1.jpg");
         beach.explore();
         beach.negate();
         beach.explore();
     }
     public static void testGrayscale(){
-      Picture beach = new Picture("beach.jpg");
+      Picture beach = new Picture("best-kitten-names-1.jpg");
       beach.explore();
-      beach.testGrayscale();
+      beach.grayscale();
       beach.explore();
     }
   /** Method to test mirrorVertical */
@@ -75,8 +75,8 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    testZeroBlue();
-    //testKeepOnlyBlue();
+    //testZeroBlue();
+    testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
     //testNegate();
