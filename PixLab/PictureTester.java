@@ -16,20 +16,20 @@ public class PictureTester
     beach.zeroBlue();
     beach.explore();
   }
-  public static void testKeepOnlyBlue(){
-      Picture beach = new Picture("best-kitten-names-1.jpg");
+  public static void testKeepOnyBlue(){
+      Picture beach = new Picture("beach.jpg");
       beach.explore();
-      beach.keepOnlyBlue();
+      beach.keepOnyBlue();
       beach.explore();
     }
     public static void testNegate(){
-        Picture beach = new Picture("best-kitten-names-1.jpg");
+        Picture beach = new Picture("beach.jpg");
         beach.explore();
         beach.negate();
         beach.explore();
     }
     public static void testGrayscale(){
-      Picture beach = new Picture("best-kitten-names-1.jpg");
+      Picture beach = new Picture("beach.jpg");
       beach.explore();
       beach.grayscale();
       beach.explore();
@@ -52,6 +52,30 @@ public class PictureTester
     temple.explore();
   }
   
+  /** Method to test mirrorVerticalRightToLeft**/
+  public static void testMirrorVerticalRightToLeft()
+  {
+    Picture temple = new Picture("temple.jpg");
+    temple.explore();
+    temple.mirrorVerticalRightToLeft();
+    temple.explore();
+  }
+  /** Method to test mirrorHorizontal**/
+  public static void testMirrorHorizontal()
+  {
+    Picture temple = new Picture("temple.jpg");
+    temple.explore();
+    temple.mirrorHorizontal();
+    temple.explore();
+  }
+  /** Method to test mirrorHorizontalBotToTop**/
+  public static void testMirrorHorizontalBotToTop()
+  {
+    Picture temple = new Picture("temple.jpg");
+    temple.explore();
+    temple.mirrorHorizontalBotToTop();
+    temple.explore();
+  }
   /** Method to test the collage method */
   public static void testCollage()
   {
@@ -75,14 +99,17 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    //testZeroBlue();
-    testKeepOnlyBlue();
+    testZeroBlue();
+    //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
     //testNegate();
     //testGrayscale();
     //testFixUnderwater();
     //testMirrorVertical();
+    //testMirrorVerticalRightToLeft();
+    //testMirrorHorizontal();
+    //testMirrorHorizontalBotToTop();
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
