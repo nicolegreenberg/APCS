@@ -4,7 +4,7 @@
  * methods.  Uncomment the methods and the code
  * in the main to test.
  * 
- * @author Barbara Ericson 
+ * @author Nicole Greenberg 
  */
 public class PictureTester
 {
@@ -16,10 +16,10 @@ public class PictureTester
     beach.zeroBlue();
     beach.explore();
   }
-  public static void testKeepOnyBlue(){
+  public static void testKeepOnlyBlue(){
       Picture beach = new Picture("beach.jpg");
       beach.explore();
-      beach.keepOnyBlue();
+      beach.keepOnlyBlue();
       beach.explore();
     }
     public static void testNegate(){
@@ -51,11 +51,16 @@ public class PictureTester
     temple.mirrorTemple();
     temple.explore();
   }
-  
+  public static void testMirrorArms(){
+      Picture temple = new Picture("snowman.jpg");
+      temple.explore();
+      temple.mirrorArms();
+      temple.explore();
+    }
   /** Method to test mirrorVerticalRightToLeft**/
   public static void testMirrorVerticalRightToLeft()
   {
-    Picture temple = new Picture("temple.jpg");
+    Picture temple = new Picture("babyleopard.jpg");
     temple.explore();
     temple.mirrorVerticalRightToLeft();
     temple.explore();
@@ -63,7 +68,7 @@ public class PictureTester
   /** Method to test mirrorHorizontal**/
   public static void testMirrorHorizontal()
   {
-    Picture temple = new Picture("temple.jpg");
+    Picture temple = new Picture("babypig.jpg");
     temple.explore();
     temple.mirrorHorizontal();
     temple.explore();
@@ -71,11 +76,18 @@ public class PictureTester
   /** Method to test mirrorHorizontalBotToTop**/
   public static void testMirrorHorizontalBotToTop()
   {
-    Picture temple = new Picture("temple.jpg");
+    Picture temple = new Picture("babysnowleopard.jpg");
     temple.explore();
     temple.mirrorHorizontalBotToTop();
     temple.explore();
   }
+  /** Method to test fixUnderwater**/
+  public static void testFixUnderwater(){
+      Picture temple = new Picture ("water.jpg");
+      temple.explore();
+      temple.fixUnderwater();
+      temple.explore();
+    }
   /** Method to test the collage method */
   public static void testCollage()
   {
@@ -111,6 +123,7 @@ public class PictureTester
     //testMirrorHorizontal();
     //testMirrorHorizontalBotToTop();
     //testMirrorTemple();
+    //testFixUnderwater();
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
