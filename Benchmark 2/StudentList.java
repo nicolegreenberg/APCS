@@ -10,7 +10,6 @@ import java.util.ArrayList;
 public class StudentList
 {
     private ArrayList <Student> students = new ArrayList();
-
     public void addStudent(){
         System.out.println("You chose add student");
         Scanner scanner = new Scanner(System.in);
@@ -20,6 +19,7 @@ public class StudentList
         System.out.println("********************");
         System.out.println("Enter Student Name");
         name = scanner.nextLine();
+        name.parseUserInput();
         System.out.println("Enter Student Number");
         id = scanner.nextInt();
         System.out.println("Enter Student GPA");
@@ -33,16 +33,25 @@ public class StudentList
         String firstName;
         String middleName;
         String lastName;
-        int count;
+        String substring1;
+        String substring2;
+        String sstring1;
+        String sstring2;
         if(name.indexOf(",") > -1){
-            for(int i = 0; i < name.length(); i++){
-                if(name.indexOf(i) = " "){
-                    count ++;
-                }
-            }
-            if(count > 1){
-                lastName = name.substring(0, name.indexOf(","));
-                
+            lastName = name.substring(0, name.indexOf(","));
+            substring1 = name.substring(name.indexOf(",") + 1);
+            firstName = substring1.substring(0, substring1.indexOf(" "));
+            substring2 = substring1.substring(substring1.indexOf(" ") + 1);
+            middleName = substring2;
+        }else if(name.indexOf(" ") > -1){
+            firstName = name.substring(0, name.indexOf(" "));
+            sstring1 = name.substring(name.indexOf(" ") + 1);
+            if(sstring1.indexOf(" ") > -1){
+                middleName = sstring1.substring(0, sstring1.indexOf(" "));
+                sstring2 = sstring1.substring(sstring1.indexOf(" "));
+                lastName = sstring2;
+            } else{
+                lastName = sstring1.substring(0, sstring1.indexOf(" "));
             }
         }
     }
