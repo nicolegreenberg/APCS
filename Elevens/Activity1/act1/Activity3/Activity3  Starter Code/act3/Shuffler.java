@@ -57,6 +57,12 @@ public class Shuffler {
 		        k = k + 2;
 		      }
 		  }
+		for(int k = 1; k < 52; k++){
+		  for(int j = 26; j < 52; j++){
+		        shuffled[k] = values[j];
+		        k = k + 2;
+		      }
+		  }
 	}
 
 	/**
@@ -71,6 +77,12 @@ public class Shuffler {
 	 * @param values is an array of integers simulating cards to be shuffled.
 	 */
 	public static void selectionShuffle(int[] values) {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+		int[] shuffled = new int[52];
+		for(int k = 0; k < 52; k++){
+		    int j = (int)(Math.random() * (k + 1));
+		    int temp = values[j];
+		    values[j] = values[k];
+		    values[k] = temp;
+		  }
 	}
 }
