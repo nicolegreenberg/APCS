@@ -7,7 +7,7 @@
  */
 public class Recursion
 {
-    public static void main(String[] args){
+     public static void main(String[] args){
         fun4(1);
     }
     //Problems 2 & 3
@@ -79,6 +79,7 @@ public class Recursion
     //Before Test: 7
     //After Test: 11
 
+    //Problem 9
     public static int wacky(int x, int y)
     {
         if(x <= 1)
@@ -86,7 +87,10 @@ public class Recursion
         else
             return wacky(x - 1,y - 1) + y;
     }
+    //Before Test: 11
+    //After Test: 11
 
+    //Problem 10
     public static int go(int x, int y)
     {
         if(x <= 1)
@@ -94,7 +98,10 @@ public class Recursion
         else
             return go(x - 1,y) + y;
     }
+    //Before Test: 7
+    //After Test: 8
 
+    //Problem 11
     public static String wow(String s, int pos)
     {
         if(pos > s.length())
@@ -102,5 +109,8 @@ public class Recursion
         else
             return s + wow(s.substring(pos), pos + 1);
     }
+    //Before Test:pacmancman3
+    //After Test: 
 
 }
+
