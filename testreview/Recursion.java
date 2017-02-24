@@ -110,7 +110,65 @@ public class Recursion
             return s + wow(s.substring(pos), pos + 1);
     }
     //Before Test:pacmancman3
-    //After Test: 
+    //After Test: pacmancman
+    
+    //Problem 12
+    //c
+    
+    //Problem 13
+    //c
+    
+    //Problem 14
+    //d
+    
+    //Sorting 1
+    //compareTo
+    
+    //2
+    //
+    
+    //3
+    //12 5 18 2 9 1
+    //1 5 18 2 9 12
+    //1 2 18 5 9 12
+    //1 2 5 18 9 12
+    //1 2 5 9 18 12
+    //1 2 5 9 12 18
+    
+    //4
+    //12 5 18 2 9 1
+    //5 12 18 2 9 1
+    //2 5 12 18 9 1
+    //2 5 9 12 18 1
+    //1 2 5 9 12 18
+    
+    //5
+    //9
+    
+    //6
+    //12 5 18 2 9 1
+    //12 5 18     2 9 1
+    //12 5   18     2 9   1
+    //12   5   18     2   9   1
+    //5 12   18     2 9   1
+    //5 12 18     1 2 9
+    //1 2 5 9 12 18
+    
+    //Abstract 1
+    //a. true
+    //b. true
+    //c. false
+    //d. true
+    //e. true
+    
+    //2
+    //1
+    
+    //3
+    //e
+    
+    //4
+    //b
 
 }
 
