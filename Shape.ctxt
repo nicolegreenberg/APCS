@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=x\ r
+comment0.target=Shape(int,\ double)
+comment1.params=x
+comment1.target=java.lang.String\ getColor(int)
+comment2.params=y
+comment2.target=double\ getArea(double)
+numComments=3
