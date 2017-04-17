@@ -4,6 +4,8 @@
 //comparable example one
 
 import static java.lang.System.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class WordRunner
 {
@@ -13,8 +15,10 @@ public class WordRunner
 		Word y = new Word("cat");
 		System.out.println( x.compareTo(y) );
 		
-		//make a list of Word
-		//call Collections.sort() and sort the list
-		//print the list
+		ArrayList<Word> words = new ArrayList<Word>();
+		words.add(x);
+		words.add(y);
+		words.sort();
+		System.out.print(words);
   }
 }
